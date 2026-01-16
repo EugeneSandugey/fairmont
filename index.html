@@ -455,8 +455,8 @@
             max-width: 1200px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
         }
 
         .gallery-item {
@@ -472,8 +472,6 @@
             height: 100%;
             object-fit: cover;
             transition: transform 0.5s ease;
-            image-rendering: -webkit-optimize-contrast;
-            image-rendering: crisp-edges;
         }
 
         .gallery-item:hover img {
@@ -622,13 +620,7 @@
             text-decoration: underline;
         }
 
-        @media (max-width: 900px) {
-            .gallery-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 500px) {
+        @media (max-width: 700px) {
             .gallery-grid {
                 grid-template-columns: 1fr;
             }
